@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.footertheme {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  width: 100%;
+}
+
+.footertheme .section-title {
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 18px;
+  font-family: "Shrikhand";
+  color: white;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.liste .list-logo {
+  display: flex;
+  font-family: "roboto";
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  list-style: none;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.liste li {
+  font-family: "roboto";
+  font-weight: 400;
+  list-style: none;
+  color: white;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    margin: 0px;
+    width: 100%;
+  }
+  .headermenu {
+    display: flex;
+    width: 85%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .headermenu img {
+    height: 36px;
+  }
+  .imgmenus {
+    height: 275px;
+    width: 100%;
+  }
+  .menucontents {
+    background-color: #F6F6F6;
+    width: 100%;
+    border-radius: 10% 10% 0% 0%;
+    margin-top: -50px;
+    position: relative;
+  }
+  .menutitle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menutitle h1 {
+    font-family: "Shrikhand";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 28px;
+  }
+  .selectmenu {
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+  }
+  .selectmenu h2 {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+  }
+  .lesplats {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    margin: 0px;
+    width: 90%;
+    height: 70px;
+  }
+  .lesplats-content {
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    margin-top: 10px;
+  }
+  .lesplats-content h3 {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    justify-content: space-around;
+  }
+  .lesplats-content h4 {
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0;
+  }
+  .lesplats-content p {
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 22px;
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */

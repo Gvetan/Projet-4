@@ -1,0 +1,104 @@
+@import "mixin.scss";
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+
+@media screen and (max-width: 640px) {
+
+    body {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .headermenu {
+        display: flex;
+        width: 85%;
+        height: 70px;
+        align-items: center;
+        justify-content: space-around;
+
+        img {
+            height: 36px;
+        }
+    }
+
+    .imgmenus {
+        height: 275px;
+        width: 100%;
+    }
+
+    .menucontents {
+        background-color: #F6F6F6;
+        width: 100%;
+        border-radius: 10% 10% 0% 0%;
+        margin-top: -50px;
+        position: relative;
+
+    }
+
+    .menutitle {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        h1 {
+            font-family: "Shrikhand";
+            font-weight: 400;
+            font-style: italic;
+            font-size: 28px;
+        }
+    }
+
+    .selectmenu {
+        flex-direction: column;
+        display: flex;
+        padding: 20px;
+
+        h2 {
+            font-family: "Roboto";
+            font-size: 16px;
+            font-weight: 300;
+            text-align: left;
+
+        }
+    }
+
+    .lesplats {
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        margin: 0px;
+        width: 90%;
+        height: 70px;
+
+    }
+
+    .lesplats-content {
+        padding-left: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10px;
+        margin-top: 10px;
+
+        h3 {
+            font-family: "Roboto";
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0;
+            justify-content: space-around;
+        }
+
+        h4 {
+            font-family: "Roboto";
+            font-size: 15px;
+            font-weight: 300;
+            margin: 0;
+            
+        }
+
+        p {
+            font-family: "Roboto";
+            font-size: 15px;
+            font-weight: 700;
+            margin-top: 22px;
+        }
+    }
+}
