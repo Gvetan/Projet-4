@@ -37,7 +37,6 @@
     }
 
     .search {
-        background-color: #f6f6f6;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -206,6 +205,9 @@
         position: absolute;
     }
 
-
+    .footertheme {
+        @include footerthememixin;
+        margin-top: 35px;
+    }
 
 }
