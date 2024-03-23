@@ -95,8 +95,9 @@ a {
     border-radius: 20px;
     background-color: #FFFFFF;
     margin: 0px;
-    width: 90%;
+    width: 95%;
     height: 70px;
+    margin-top: 12px;
   }
   .lesplats-content {
     padding-left: 10px;
@@ -123,6 +124,9 @@ a {
     font-size: 15px;
     font-weight: 700;
     margin-top: 22px;
+  }
+  .titlespan {
+    border-bottom: 3px solid #99E2D0;
   }
 }
 
