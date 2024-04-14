@@ -2,130 +2,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
 
-@media screen and (max-width: 640px) {
 
-    body {
-        margin: 0px;
-        width: 100%;
+/* Le code ci-dessous correspond à la version pc */
+
+
+body {
+    margin: 0px;
+    width: 100%;
+}
+
+.headermenu {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+        height: 36px;
+    }
+}
+
+.imgmenus {
+    height: 383px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menucontents {
+    background-color: #F6F6F6;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -50px;
+    position: relative;
+
+    @media screen and (min-width: 640px) {
+        width: 70%;
+        left: 15%;
     }
 
-    .headermenu {
+    h2 {
         display: flex;
-        width: 85%;
-        height: 70px;
+        size: 16px;
+        font-family: "Roboto";
+        font-weight: 300;
+        padding-left: 20px;
+        margin-bottom: 0;
+
+        @media screen and (min-width: 640px) {
+            padding-left:110px ;
+        }
+    }
+
+}
+
+.menutitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    h1 {
+        font-family: "Shrikhand";
+        font-weight: 400;
+        font-style: italic;
+        font-size: 28px;
+    }
+}
+
+.selectmenu {
+    flex-direction: column;
+    display: flex;
+    padding: 0px 20px 20px 20px;
+
+    @media screen and (min-width: 640px) {
         align-items: center;
-        justify-content: space-around;
-
-        img {
-            height: 36px;
-        }
-    }
-
-    .imgmenus {
-        height: 275px;
-        width: 100%;
-    }
-
-    .menucontents {
-        background-color: #F6F6F6;
-        width: 100%;
-        border-radius: 40px 40px 0px 0px;
-        margin-top: -50px;
-        position: relative;
-
-    }
-
-    .menutitle {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-        h1 {
-            font-family: "Shrikhand";
-            font-weight: 400;
-            font-style: italic;
-            font-size: 28px;
-        }
-    }
-
-    .selectmenu {
-        flex-direction: column;
-        display: flex;
-        padding: 20px;
-
-        h2 {
-            font-family: "Roboto";
-            font-size: 16px;
-            font-weight: 300;
-            text-align: left;
-
-        }
-    }
-
-    .lesplats {
-        border-radius: 20px;
-        background-color: #FFFFFF;
-        margin: 0px;
-        width: 95%;
-        height: 70px;
-        margin-top: 12px;
-
-    }
-
-    .lesplats-content {
-        padding-left: 10px;
-        display: flex;
-        justify-content: space-between;
-        padding-right: 10px;
-        margin-top: 10px;
-
-        h3 {
-            font-family: "Roboto";
-            font-size: 18px;
-            font-weight: 500;
-            margin: 0;
-            justify-content: space-around;
-        }
-
-        h4 {
-            font-family: "Roboto";
-            font-size: 15px;
-            font-weight: 300;
-            margin: 0;
-            
-        }
-
-        p {
-            font-family: "Roboto";
-            font-size: 15px;
-            font-weight: 700;
-            margin-top: 22px;
-        }
-    }
-
-    .titlespan{
-        border-bottom: 3px solid #99E2D0;
-    }
-
-    .commande{
-        display: flex;
         justify-content: center;
-        text-align: center;
-        height: 80px;
+        padding: 0px 0px 20px 0px;
+    }
+    
+}
 
-        button {
-            border-radius: 25px 25px 25px 25px;
-            border: none;
-            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-            width: 218px;
-            height: 50px;
-            font-family: "roboto";
-            color: white;
-            font-weight: 500;
-            font-size: 16px;
-            justify-content: center;
-        }
+.lesplats {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    margin: 0px;
+    width: 95%;
+    height: 70px;
+    margin-top: 12px;
+
+    @media screen and (min-width: 640px) {
+        width: 70%;
+    }
+}
+
+.lesplats-check{
+    background-color: #99E2D0;
+}
+
+.lesplats-content {
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    margin-top: 10px;
+
+    @media screen and (min-width: 640px) {
+        width: 95%;
     }
 
-    
+    h3 {
+        font-family: "Roboto";
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    h4 {
+        font-family: "Roboto";
+        font-size: 15px;
+        font-weight: 300;
+        margin: 0;
+        
+    }
+
+    p {
+        font-family: "Roboto";
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 22px;
+    }
+}
+
+.titlespan{
+    border-bottom: 3px solid #99E2D0;
+}
+
+.commande{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 80px;
+
+    button {
+        border-radius: 25px 25px 25px 25px;
+        border: none;
+        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        width: 218px;
+        height: 50px;
+        font-family: "roboto";
+        color: white;
+        font-weight: 500;
+        font-size: 16px;
+        justify-content: center;
+    }
 }
