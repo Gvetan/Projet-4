@@ -122,25 +122,43 @@ body {
   background-color: #FFFFFF;
   margin: 0px;
   width: 95%;
-  height: 70px;
+  height: 65px;
   margin-top: 12px;
+  display: flex;
 }
 @media screen and (min-width: 640px) {
   .lesplats {
     width: 70%;
+    border-radius: 15px;
   }
 }
-
-.lesplats-check {
+.lesplats .prixdesplats {
+  margin-left: auto;
+  display: flex;
+  font-weight: 700;
+  font-family: "Roboto";
+  font-size: 15px;
+  padding: 10px;
+  justify-content: flex-end;
+}
+.lesplats .lesplats-check {
+  position: relative;
   background-color: #99E2D0;
+  margin-right: -3px;
+  width: 10%;
+  border-radius: 0% 20% 20% 0%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
 }
 
 .lesplats-content {
   padding-left: 10px;
   display: flex;
-  justify-content: space-between;
   padding-right: 10px;
   margin-top: 10px;
+  flex-direction: column;
 }
 @media screen and (min-width: 640px) {
   .lesplats-content {
@@ -159,12 +177,6 @@ body {
   font-size: 15px;
   font-weight: 300;
   margin: 0;
-}
-.lesplats-content p {
-  font-family: "Roboto";
-  font-size: 15px;
-  font-weight: 700;
-  margin-top: 22px;
 }
 
 .titlespan {
