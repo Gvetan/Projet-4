@@ -7,42 +7,6 @@ a {
   color: inherit;
 }
 
-.footertheme {
-  display: flex;
-  flex-direction: column;
-  background-color: #353535;
-  width: 100%;
-}
-
-.footertheme .section-title {
-  margin-top: 15px;
-  margin-left: 15px;
-  font-size: 18px;
-  font-family: "Shrikhand";
-  color: white;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.liste .list-logo {
-  display: flex;
-  font-family: "roboto";
-  font-weight: 500;
-  font-size: 16px;
-  color: white;
-  list-style: none;
-  margin-top: 15px;
-  gap: 10px;
-}
-
-.liste li {
-  font-family: "roboto";
-  font-weight: 400;
-  list-style: none;
-  color: white;
-  margin-top: 15px;
-}
-
 /* Le code ci-dessous correspond à la version pc */
 body {
   margin: 0px;
@@ -51,12 +15,18 @@ body {
 
 .headermenu {
   display: flex;
+  justify-content: center;
   height: 70px;
   align-items: center;
-  justify-content: space-around;
 }
 .headermenu img {
   height: 36px;
+}
+
+.fleche {
+  position: absolute;
+  top: 25px;
+  padding-left: 20px;
 }
 
 .imgmenus {
@@ -73,8 +43,12 @@ body {
 }
 @media screen and (min-width: 640px) {
   .menucontents {
-    width: 70%;
-    left: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .menucontents h2 {
@@ -87,7 +61,7 @@ body {
 }
 @media screen and (min-width: 640px) {
   .menucontents h2 {
-    padding-left: 110px;
+    padding-left: 0px;
   }
 }
 
@@ -104,16 +78,31 @@ body {
   font-size: 28px;
 }
 
+i {
+  position: absolute;
+  height: 21px;
+}
+
+.heart-full {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.heart-full:hover {
+  color: transparent;
+  opacity: 1;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 .selectmenu {
-  flex-direction: column;
-  display: flex;
   padding: 0px 20px 20px 20px;
 }
 @media screen and (min-width: 640px) {
   .selectmenu {
-    align-items: center;
-    justify-content: center;
-    padding: 0px 0px 20px 0px;
+    width: 65%;
   }
 }
 
@@ -122,15 +111,22 @@ body {
   background-color: #FFFFFF;
   margin: 0px;
   width: 95%;
-  height: 65px;
+  height: 70px;
   margin-top: 12px;
   display: flex;
+  overflow: hidden;
+  justify-content: space-between;
 }
 @media screen and (min-width: 640px) {
   .lesplats {
-    width: 70%;
     border-radius: 15px;
+    height: 65px;
   }
+}
+.lesplats .animationcheck {
+  display: flex;
+  margin-right: -25px;
+  transition: all 0.5s;
 }
 .lesplats .prixdesplats {
   margin-left: auto;
@@ -144,13 +140,21 @@ body {
 .lesplats .lesplats-check {
   position: relative;
   background-color: #99E2D0;
-  margin-right: -3px;
-  width: 10%;
+  margin-right: -25px;
+  width: 50px;
   border-radius: 0% 20% 20% 0%;
   justify-content: center;
   display: flex;
   align-items: center;
   color: #FFFFFF;
+}
+
+.lesplats:hover .animationcheck {
+  margin-right: 25px;
+}
+
+.lesplats:hover .lesplats-content {
+  width: calc(90% - 25px);
 }
 
 .lesplats-content {
@@ -159,6 +163,10 @@ body {
   padding-right: 10px;
   margin-top: 10px;
   flex-direction: column;
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 640px) {
   .lesplats-content {
@@ -171,12 +179,18 @@ body {
   font-weight: 500;
   margin: 0;
   justify-content: space-around;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.lesplats-content h4 {
+.lesplats-content p {
   font-family: "Roboto";
   font-size: 15px;
   font-weight: 300;
   margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .titlespan {

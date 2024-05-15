@@ -129,6 +129,10 @@ body {
     font-family: "roboto";
     font-weight: 700;
     size: 24px;
+
+    @media screen and (min-width: 640px) {
+        padding-left: 60px;
+    }
 }
 
 .fa-mobile-screen-button:before,
@@ -164,6 +168,10 @@ body {
     font-weight: 700;
     size: 24px;
     padding-left: 30px;
+
+    @media screen and (min-width: 640px) {
+        padding-left: 80px;
+    }
 }
 
 .restaurant-cards {
@@ -264,9 +272,46 @@ body {
 }
 
 .footertheme {
-    @include footerthememixin;
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    width: 100%;
     margin-top: 35px;
 }
+
+.section-title {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 18px;
+    font-family: "Shrikhand";
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.footerstyl{
+
+margin-left: 15px;
+
+    p {
+        display: flex;
+        font-family: "roboto";
+        font-weight: 500;
+        font-size: 16px;
+        color: white;
+        list-style: none;
+        margin-top: 15px;
+        gap: 10px;
+    }
+    @media screen and (min-width: 640px) {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+
+}
+
+
 
 br {
     display: none;

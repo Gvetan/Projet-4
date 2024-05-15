@@ -13,13 +13,21 @@ body {
 
 .headermenu {
     display: flex;
+    justify-content: center;
     height: 70px;
     align-items: center;
-    justify-content: space-around;
+    
 
     img {
         height: 36px;
+        
     }
+}
+
+.fleche{
+    position: absolute;
+    top: 25px;
+    padding-left: 20px;
 }
 
 .imgmenus {
@@ -35,8 +43,12 @@ body {
     position: relative;
 
     @media screen and (min-width: 640px) {
-        width: 70%;
-        left: 15%;
+        margin-left: 15%;
+        margin-right: 15%;
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     h2 {
@@ -48,7 +60,7 @@ body {
         margin-bottom: 0;
 
         @media screen and (min-width: 640px) {
-            padding-left: 110px;
+            padding-left: 0px;
         }
     }
 
@@ -68,15 +80,33 @@ body {
     }
 }
 
+
+i {
+    position: absolute;
+    height: 21px;
+
+}
+
+.heart-full {
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.heart-full:hover {
+    color: transparent;
+    opacity: 1;
+    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
 .selectmenu {
-    flex-direction: column;
-    display: flex;
+    
     padding: 0px 20px 20px 20px;
 
     @media screen and (min-width: 640px) {
-        align-items: center;
-        justify-content: center;
-        padding: 0px 0px 20px 0px;
+        width: 65%;
     }
 
 }
@@ -86,13 +116,21 @@ body {
     background-color: #FFFFFF;
     margin: 0px;
     width: 95%;
-    height: 65px;
+    height: 70px;
     margin-top: 12px;
     display: flex;
+    overflow: hidden;
+    justify-content: space-between;
 
     @media screen and (min-width: 640px) {
-        width: 70%;
         border-radius: 15px;
+        height: 65px;
+    }
+
+    .animationcheck{
+        display: flex;
+        margin-right: -25px;
+        transition: all 0.5s;
     }
 
     .prixdesplats {
@@ -108,8 +146,8 @@ body {
     .lesplats-check {
         position: relative;
         background-color: #99E2D0;
-        margin-right: -3px;
-        width: 10%;
+        margin-right: -25px;
+        width: 50px;
         border-radius: 0% 20% 20% 0%;
         justify-content: center;
         display: flex;
@@ -120,6 +158,14 @@ body {
 
 }
 
+.lesplats:hover .animationcheck {
+    margin-right: 25px;
+}
+
+.lesplats:hover .lesplats-content{
+width: calc(90% - 25px);
+} 
+
 
 .lesplats-content {
     padding-left: 10px;
@@ -127,6 +173,12 @@ body {
     padding-right: 10px;
     margin-top: 10px;
     flex-direction: column;
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+
 
     @media screen and (min-width: 640px) {
         width: 95%;
@@ -138,14 +190,20 @@ body {
         font-weight: 500;
         margin: 0;
         justify-content: space-around;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        
     }
 
-    h4 {
+    p {
         font-family: "Roboto";
         font-size: 15px;
         font-weight: 300;
         margin: 0;
-
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
 

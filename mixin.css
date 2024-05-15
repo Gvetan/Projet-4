@@ -4,40 +4,4 @@ a {
   color: inherit;
 }
 
-.footertheme {
-  display: flex;
-  flex-direction: column;
-  background-color: #353535;
-  width: 100%;
-}
-
-.footertheme .section-title {
-  margin-top: 15px;
-  margin-left: 15px;
-  font-size: 18px;
-  font-family: "Shrikhand";
-  color: white;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.liste .list-logo {
-  display: flex;
-  font-family: "roboto";
-  font-weight: 500;
-  font-size: 16px;
-  color: white;
-  list-style: none;
-  margin-top: 15px;
-  gap: 10px;
-}
-
-.liste li {
-  font-family: "roboto";
-  font-weight: 400;
-  list-style: none;
-  color: white;
-  margin-top: 15px;
-}
-
 /*# sourceMappingURL=mixin.css.map */
